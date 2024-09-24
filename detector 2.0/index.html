@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de Spam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Detector de Spam</h1>
+        <input type="text" id="username" placeholder="Escribe tu nombre">
+        <textarea id="message" placeholder="Escribe tu mensaje aquí"></textarea>
+        
+        <!-- Selección de foto de perfil -->
+        <label for="profile-pic">Elige una imagen de perfil:</label>
+        <select id="profile-pic">
+            <option value="goku">Goku</option>
+            <option value="mario">Mario</option>
+        </select>
+        <div id="profile-pic-display"></div>
+        
+        <button onclick="checkSpam()">Enviar</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
